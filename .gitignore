@@ -1,0 +1,42 @@
+# macOS junk
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Python build + cache
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+.eggs/
+dist/
+build/
+.venv/
+venv/
+env/
+
+# IDE / Editor settings
+.vscode/
+.idea/
+*.swp
+
+# Logs
+*.log
+logs/
+
+# Environment
+.env
+.env.*
+*.key
+*.secret
+
+# Streamlit cache
+.streamlit/
+
+# Chroma + local data
+db/*
+!db/.gitkeep
+
+# Docs/PDFs
+docs/*
+!docs/.gitkeep
