@@ -1,9 +1,14 @@
-# macOS junk
+# =========================================
+# 🧠 Ask My Docs — .gitignore
+# =========================================
+
+# macOS system files
 .DS_Store
 .AppleDouble
 .LSOverride
 
-# Python build + cache
+# -----------------------------------------
+# Python build / cache
 __pycache__/
 *.py[cod]
 *.so
@@ -11,32 +16,46 @@ __pycache__/
 .eggs/
 dist/
 build/
+*.sqlite  # ChromaDB persistence files
+
+# Virtual environments
 .venv/
 venv/
 env/
 
+# -----------------------------------------
 # IDE / Editor settings
 .vscode/
 .idea/
 *.swp
+*.swo
 
-# Logs
+# -----------------------------------------
+# Logs & local output
 *.log
 logs/
 
-# Environment
+# -----------------------------------------
+# Environment / Secrets
 .env
 .env.*
 *.key
 *.secret
 
+# -----------------------------------------
 # Streamlit cache
 .streamlit/
 
-# Chroma + local data
+# -----------------------------------------
+# ChromaDB vector store
 db/*
 !db/.gitkeep
 
-# Docs/PDFs
+# -----------------------------------------
+# PDF Documents
 docs/*
 !docs/.gitkeep
+
+# -----------------------------------------
+# Jupyter notebook checkpoints
+.ipynb_checkpoints/
